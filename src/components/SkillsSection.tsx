@@ -5,29 +5,34 @@ import { motion, useInView } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Design Tools",
-    icon: "🎨",
-    skills: ["Figma", "Adobe Photoshop", "Canva"],
+    title: "Languages",
+    icon: "💻",
+    skills: ["Python", "SQL"],
   },
   {
-    title: "UI/UX Design",
-    icon: "🖥",
-    skills: ["Wireframing", "Prototyping", "User Flows", "Responsive Design"],
+    title: "Data & Analytics",
+    icon: "📊",
+    skills: ["Pandas", "NumPy", "Data Preprocessing", "Data Analysis", "Data Visualization"],
+  },
+  {
+    title: "AI & Generative AI",
+    icon: "🧠",
+    skills: ["LLMs", "RAG", "Embeddings", "LangChain", "Prompt Engineering", "Generative AI"],
+  },
+  {
+    title: "Data Engineering",
+    icon: "⚙️",
+    skills: ["ETL", "Data Processing", "Data Modeling"],
   },
   {
     title: "Databases",
     icon: "🗄",
-    skills: ["MySQL", "MongoDB (NoSQL)"],
+    skills: ["MySQL", "MongoDB"],
   },
   {
-    title: "Languages",
-    icon: "💻",
-    skills: ["Python", "JavaScript"],
-  },
-  {
-    title: "Data Visualization",
-    icon: "📊",
-    skills: ["Power BI", "MS Excel", "Tableau"],
+    title: "Development & Tools",
+    icon: "🛠",
+    skills: ["REST APIs", "Git", "GitHub", "Power BI", "Excel"],
   },
 ];
 
@@ -51,7 +56,7 @@ export default function SkillsSection() {
             </span>
             <div className="w-12 h-[1px] bg-accent/50" />
             <span className="font-code text-[10px] tracking-[0.4em] uppercase text-text-muted">
-              Skills & Tools
+              Skills & Technologies
             </span>
           </div>
         </div>
@@ -59,17 +64,17 @@ export default function SkillsSection() {
         {/* Section title — CENTERED */}
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-6xl font-extralight tracking-tight text-text-primary mb-4 leading-tight">
-            Tools &
+            Technical &
           </h2>
           <h2 className="text-4xl md:text-6xl font-display italic text-accent leading-tight">
-            technologies
+            competencies
           </h2>
         </div>
 
         {/* Subtitle — CENTERED */}
         <p className="text-center text-text-secondary text-base md:text-lg font-light leading-relaxed max-w-xl mx-auto mb-20">
-          A curated toolkit that bridges the gap between design thinking and technical
-          execution — from pixel-perfect prototypes to data-driven insights.
+          A curated technical toolkit centered on data science, machine learning, and software
+          development — from data preprocessing pipelines to intelligent, data-driven systems.
         </p>
 
         {/* Skills Cards — CENTERED and balanced using flex wrap */}

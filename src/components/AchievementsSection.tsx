@@ -4,28 +4,22 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 const certifications = [
-  "Data Fundamentals — IBM (Mar 2024)",
-  "Microsoft Power BI — Infosys (Jun 2025)",
-  "Programming Fundamentals Using Python — Infosys (Jun 2025)",
+  "Data Fundamentals — IBM (Issued Mar 2024)",
+  "Microsoft Power BI — Infosys (Issued Jun 2025)",
+  "Programming Fundamentals Using Python — Infosys (Issued Jun 2025)",
 ];
 
 const achievements = [
   {
     icon: "🏆",
-    title: "Escape Room Challenge",
+    title: "Winner – Escape Room Challenge",
     description: "Secured 1st position in a multi-round problem-solving competition",
     year: "2025",
   },
   {
     icon: "🥇",
-    title: "DECRYPT-X Competition",
-    description: "Secured 1st place at Jain University",
-    year: "2025",
-  },
-  {
-    icon: "🏆",
-    title: "GRINOVA Ideathon 2026",
-    description: "Selected among top 12 teams at Jain University",
+    title: "Winner – GRINOVA Ideathon 2026",
+    description: "Secured 1st position among participating teams at Jain University",
     year: "2026",
   },
 ];
@@ -33,11 +27,15 @@ const achievements = [
 const extraCurricular = [
   {
     role: "Design Lead",
-    org: "ANOVA CLUB — Jain University",
+    org: "ANOVA Club — Jain University",
+  },
+  {
+    role: "Core Member",
+    org: "College Technical Council, contributing to 5+ technical events and student initiatives",
   },
   {
     role: "Participant",
-    org: "24-hour Hackathon — CRCE Cell, Jain University (2025)",
+    org: "24-hour Hackathon organized by CRCE Cell, Jain University (2025)",
   },
 ];
 
@@ -72,7 +70,7 @@ export default function AchievementsSection() {
         </div>
 
         {/* Achievement Cards — bigger gaps, more padding */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-[6rem]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-[6rem]">
           {achievements.map((achievement, i) => (
             <motion.div
               key={i}
@@ -135,11 +133,11 @@ export default function AchievementsSection() {
         </div>
 
         {/* Extra Curricular — more space */}
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h3 className="font-code text-[11px] tracking-[0.3em] uppercase text-text-muted text-center mb-[3rem]">
-            Beyond Design
+            Leadership & Activities
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {extraCurricular.map((item, i) => (
               <motion.div
                 key={i}

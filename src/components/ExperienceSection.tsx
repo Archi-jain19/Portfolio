@@ -9,26 +9,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
-    role: "SE Intern",
+    role: "Data Science Intern",
+    company: "BNNarratives",
+    period: "June 2026 — July 2026",
+    type: "Internship",
+    description: [
+      "Contributed to data curation, preprocessing, and coding tasks, supporting data preparation and analysis for project deliverables.",
+      "Analyzed and prepared 500+ data records across multiple datasets for downstream analysis and reporting.",
+    ],
+    tags: ["Data Science", "Data Curation", "Data Preparation", "Python", "Analytics"],
+  },
+  {
+    role: "Software Engineering Intern",
     company: "Infosys Springboard Virtual Internship 6.0",
     period: "Dec 2025 — Feb 2026",
     type: "Virtual Internship",
     description: [
-      "Developed components for a Water Quality Monitoring System using data processing and analytics techniques",
-      "Worked on data handling, preprocessing, and system design for real-world environmental monitoring",
+      "Developed data-handling and preprocessing components for a Water Quality Monitoring System supporting environmental monitoring.",
+      "Processed 500+ water-quality records and sensor readings for data-driven monitoring.",
     ],
-    tags: ["Data Processing", "Analytics", "System Design", "Environmental Tech"],
-  },
-  {
-    role: "Frontend Developer Intern",
-    company: "Uptoskills",
-    period: "Jan 2025 — Apr 2025",
-    type: "Remote",
-    description: [
-      "Developed a responsive, user-friendly HR offer letter system integrating frontend forms with backend logic",
-      "Implemented intuitive UI components with clean data flow architecture",
-    ],
-    tags: ["React", "Frontend", "UI Development", "HR Tech"],
+    tags: ["Python", "Data Preprocessing", "Sensor Analytics", "Data Handling", "System Design"],
   },
 ];
 

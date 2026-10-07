@@ -21,24 +21,26 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Archi Jain — UI/UX Designer & Product Thinker",
+  title: "Archi Jain | Data Science & Software Engineering",
   description:
-    "Analytical and creative UI/UX designer passionate about solving problems through intuitive digital experiences. Specializing in wireframing, prototyping, and modern design practices.",
+    "Computer Science Engineering (Data Science) student at Jain University with hands-on experience in Python, SQL, data analytics, AI/ML, data preprocessing, and software development.",
   keywords: [
-    "UI/UX Designer",
-    "Product Designer",
     "Archi Jain",
+    "Data Science",
+    "Software Engineering",
+    "AI/ML",
+    "Python",
+    "SQL",
+    "Data Analytics",
+    "Machine Learning",
     "Portfolio",
-    "Figma",
-    "Wireframing",
-    "Prototyping",
-    "User Experience",
+    "Jain University",
   ],
   authors: [{ name: "Archi Jain" }],
   openGraph: {
-    title: "Archi Jain — UI/UX Designer & Product Thinker",
+    title: "Archi Jain | Data Science & Software Engineering",
     description:
-      "Crafting intuitive digital experiences through design thinking and creative problem-solving.",
+      "Computer Science Engineering (Data Science) student with hands-on experience in Python, SQL, data analytics, AI/ML, and data-driven problem solving.",
     type: "website",
   },
 };

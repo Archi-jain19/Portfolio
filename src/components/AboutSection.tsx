@@ -10,9 +10,9 @@ export default function AboutSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
 
-  const aboutText = `I'm Archi Jain — an analytical and creative mind passionate about UI/UX design and solving problems through intuitive digital experiences. Currently pursuing my B.Tech in Computer Science Engineering (Data Science) at Jain University, I bring a unique blend of technical depth and design thinking to every project I touch.`;
+  const aboutText = `I'm Archi Jain — a Computer Science Engineering (Data Science) student at Jain University with a strong foundation in Python, SQL, and data-driven problem solving. I bring hands-on experience building AI/ML and data-focused projects, with an interest in using technology to develop practical and scalable solutions.`;
 
-  const aboutText2 = `I'm a quick learner skilled in Figma, wireframing, prototyping, and modern design practices. From designing logistics platforms to wireframing video streaming apps, I approach every challenge as a product thinker — mapping user flows, building systems, and crafting interfaces that just make sense.`;
+  const aboutText2 = `With practical experience across data analytics, preprocessing pipelines, ETL workflows, and software development, I focus on turning complex datasets into reliable, actionable insights. From predicting student dropout risks with machine learning to processing sensor readings for environmental monitoring systems, I approach every engineering challenge with analytical rigor and structured software design.`;
 
   useEffect(() => {
     if (!textRef.current) return;
@@ -44,11 +44,13 @@ export default function AboutSection() {
     const words = text.split(" ");
     return words.map((word, i) => {
       const isAccent =
-        word.includes("UI/UX") ||
-        word.includes("design") ||
-        word.includes("product") ||
-        word.includes("intuitive") ||
-        word.includes("creative");
+        word.includes("Data") ||
+        word.includes("Python") ||
+        word.includes("SQL") ||
+        word.includes("AI/ML") ||
+        word.includes("scalable") ||
+        word.includes("solutions") ||
+        word.includes("problem");
 
       return (
         <span key={i}>
@@ -101,8 +103,8 @@ export default function AboutSection() {
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-4xl mx-auto">
           {[
-            { number: "8.0+", label: "CGPA" },
-            { number: "4+", label: "Projects" },
+            { number: "8.02", label: "CGPA (8.023)" },
+            { number: "10+", label: "Projects" },
             { number: "2", label: "Internships" },
             { number: "3", label: "Certifications" },
           ].map((stat, i) => (

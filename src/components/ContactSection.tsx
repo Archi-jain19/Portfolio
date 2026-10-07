@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 const socialLinks = [
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/archi-jain",
+    href: "https://www.linkedin.com/in/archi-jain-552b20287/",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -17,7 +17,7 @@ const socialLinks = [
   },
   {
     label: "GitHub",
-    href: "https://github.com/archi-jain",
+    href: "https://github.com/Archi-jain19",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
@@ -96,7 +96,7 @@ export default function ContactSection() {
               Looking for a
             </h2>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-display italic text-accent leading-tight mt-2">
-              UI/UX Designer?
+              Data Science Engineer?
             </h2>
           </motion.div>
 
@@ -120,8 +120,8 @@ export default function ContactSection() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            I&apos;m always excited to connect over design, technology, and creative
-            problem-solving. Whether it&apos;s a project, an opportunity, or just a conversation
+            I&apos;m always excited to connect over data science, machine learning, and software
+            development. Whether it&apos;s a project, an opportunity, or a technical conversation
             — I&apos;d love to hear from you.
           </motion.p>
 
@@ -228,7 +228,7 @@ export default function ContactSection() {
 
         {/* Floating interactive elements — more top margin */}
         <div className="relative mt-28 max-w-3xl mx-auto h-36 hidden md:block">
-          {["Figma", "Photoshop", "Canva", "Python", "Tableau"].map((tool, i) => (
+          {["Python", "SQL", "Pandas", "AI / ML", "Power BI"].map((tool, i) => (
             <motion.div
               key={tool}
               className="absolute px-5 py-2.5 rounded-full border border-border bg-bg-secondary/50 text-text-muted font-code text-[10px] tracking-[0.2em] uppercase cursor-grab active:cursor-grabbing"
@@ -265,10 +265,10 @@ export default function ContactSection() {
           <div className="flex items-center gap-1.5">
             <span className="text-sm font-light text-text-muted">archi</span>
             <span className="w-1 h-1 rounded-full bg-accent" />
-            <span className="text-sm font-light text-text-muted">design</span>
+            <span className="text-sm font-light text-text-muted">jain</span>
           </div>
           <p className="font-code text-[9px] tracking-[0.2em] uppercase text-text-muted">
-            Designed & Built by Archi Jain · 2025
+            Designed & Built by Archi Jain · 2026
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

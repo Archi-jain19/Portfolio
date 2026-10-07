@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Preloader({ onComplete }: { onComplete: () => void }) {
   const [isLoading, setIsLoading] = useState(true);
   const name = "ARCHI JAIN";
-  const subtitle = "UI/UX Designer";
+  const subtitle = "Data Science & Software Engineering";
 
   useEffect(() => {
     const timer = setTimeout(() => {

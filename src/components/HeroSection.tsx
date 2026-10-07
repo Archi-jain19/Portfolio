@@ -138,7 +138,7 @@ export default function HeroSection() {
                 variants={wordVariants}
                 className="text-[clamp(3rem,8vw,7rem)] font-extralight leading-[0.9] tracking-tight text-text-primary"
               >
-                CRAFTING
+                BUILDING
               </motion.h1>
             </div>
             <div className="overflow-hidden mb-2 pl-4 md:pl-12">
@@ -146,7 +146,7 @@ export default function HeroSection() {
                 variants={wordVariants}
                 className="text-[clamp(3rem,8vw,7rem)] leading-[0.9] tracking-tight font-display italic text-accent"
               >
-                intuitive
+                data-driven
               </motion.h1>
             </div>
             <div className="overflow-hidden">
@@ -154,7 +154,7 @@ export default function HeroSection() {
                 variants={wordVariants}
                 className="text-[clamp(3rem,8vw,7rem)] font-extralight leading-[0.9] tracking-tight text-text-primary"
               >
-                EXPERIENCES
+                SOLUTIONS
               </motion.h1>
             </div>
           </motion.div>
@@ -168,9 +168,9 @@ export default function HeroSection() {
           >
             <p className="text-text-secondary text-base md:text-lg leading-relaxed font-light">
               Hi! I&apos;m{" "}
-              <span className="text-text-primary font-normal">Archi Jain</span>, a UI/UX
-              Designer & Product Thinker from India, transforming complex problems into
-              clean, intuitive digital experiences.
+              <span className="text-text-primary font-normal">Archi Jain</span>, a
+              Computer Science Engineering (Data Science) student at Jain University,
+              building data-driven solutions with Python, SQL, AI/ML, and modern technologies.
             </p>
           </motion.div>
 
@@ -181,7 +181,7 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 4.2, duration: 0.8 }}
           >
-            {["UI/UX Designer", "Product Thinker", "B.Tech — Jain University"].map(
+            {["CSE (Data Science)", "Python & SQL", "AI / ML & Analytics", "B.Tech — Jain University"].map(
               (tag) => (
                 <span
                   key={tag}
