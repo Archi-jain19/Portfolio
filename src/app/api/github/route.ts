@@ -18,6 +18,28 @@ export interface RepoProject {
 
 // Curated metadata mapping for known GitHub repositories
 const repoMetadata: Record<string, Partial<RepoProject>> = {
+  "ganapati-build-mart-website": {
+    title: "Ganapati Build Mart",
+    subtitle: "Full-Stack E-Commerce & Management Platform",
+    description:
+      "Full-stack commercial web application featuring interactive product catalogues, inquiry management, administrative control panel, and database-backed dynamic operations.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "MySQL", "Vercel"],
+    color: "#E67E22",
+    featured: true,
+    category: "software-web",
+    liveUrl: "https://ganapati-build-mart-website-git-main-archi-jain19s-projects.vercel.app/",
+  },
+  "ganapati-build-mart": {
+    title: "Ganapati Build Mart",
+    subtitle: "Full-Stack E-Commerce & Management Platform",
+    description:
+      "Full-stack commercial web application featuring interactive product catalogues, inquiry management, administrative control panel, and database-backed dynamic operations.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "MySQL", "Vercel"],
+    color: "#E67E22",
+    featured: true,
+    category: "software-web",
+    liveUrl: "https://ganapati-build-mart-website-git-main-archi-jain19s-projects.vercel.app/",
+  },
   riskradar: {
     title: "RiskRadar",
     subtitle: "ML Dropout Risk Prediction Model",
@@ -140,6 +162,20 @@ export const curatedProjects: RepoProject[] = [
     githubUrl: "https://github.com/Archi-jain19/RiskRadar",
     featured: true,
     category: "ai-data",
+  },
+  {
+    id: "ganapati-build-mart-website",
+    title: "Ganapati Build Mart",
+    subtitle: "Full-Stack E-Commerce & Management Platform",
+    description:
+      "Full-stack commercial web application featuring interactive product catalogues, inquiry management, administrative control panel, and database-backed dynamic operations.",
+    tags: ["HTML5", "CSS3", "JavaScript", "Python", "Flask", "MySQL", "Vercel"],
+    color: "#E67E22",
+    year: "2026",
+    githubUrl: "https://github.com/Archi-jain19/Ganapati-Build-Mart-Website",
+    liveUrl: "https://ganapati-build-mart-website-git-main-archi-jain19s-projects.vercel.app/",
+    featured: true,
+    category: "software-web",
   },
   {
     id: "google_drive_clone",
@@ -298,7 +334,7 @@ export async function GET() {
           color: metadata.color || "#C4622D",
           year: repo.updated_at ? new Date(repo.updated_at).getFullYear().toString() : "2026",
           githubUrl: repo.html_url,
-          liveUrl: repo.homepage || metadata.liveUrl,
+          liveUrl: metadata.liveUrl || repo.homepage || undefined,
           stars: repo.stargazers_count,
           featured: metadata.featured ?? false,
           category: metadata.category || "ai-data",

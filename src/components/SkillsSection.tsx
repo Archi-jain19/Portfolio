@@ -32,7 +32,7 @@ const skillCategories = [
   {
     title: "Development & Tools",
     icon: "🛠",
-    skills: ["REST APIs", "Git", "GitHub", "Power BI", "Excel"],
+    skills: ["Flask", "REST APIs", "Git", "GitHub", "Power BI", "Excel"],
   },
 ];
 

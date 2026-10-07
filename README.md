@@ -107,6 +107,7 @@ portfolio/
 | :--- | :--- | :--- | :--- |
 | **[FarmEase](https://github.com/Archi-jain19)** | AI / Agriculture | Python, AI/ML, Data Analytics | AI-powered agriculture platform integrating crop recommendations, disease detection, fertilizer guidance, and yield insights. |
 | **[RiskRadar](https://github.com/Archi-jain19/RiskRadar)** | Machine Learning | Python, Scikit-Learn, Pandas | ML classification model predicting student dropout risk using feature engineering, data preprocessing, and model evaluation. |
+| **[Ganapati Build Mart](https://github.com/Archi-jain19/Ganapati-Build-Mart-Website)** | E-Commerce / Full-Stack | HTML5, CSS3, JavaScript, Flask, MySQL | Commercial web platform featuring interactive product catalogues, inquiry management, admin control dashboard, and [live deployment](https://ganapati-build-mart-website-git-main-archi-jain19s-projects.vercel.app/). |
 | **[Google Drive Clone](https://github.com/Archi-jain19/Google_Drive_Clone)** | Cloud Storage | TypeScript, React, FastAPI | Full-stack cloud storage application with JWT authentication, file streaming, and separate frontend/backend modules. |
 | **[FacetLens](https://github.com/Archi-jain19/Ai_Ml_Assignment)** | NLP / Pipeline | Python, Machine Learning | Scalable conversational facet scoring pipeline with principled abstention, automating dialogue analysis and evaluation. |
 
