@@ -1,36 +1,159 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# ⚡ Archi Jain — Portfolio
 
-First, run the development server:
+**Data Science & Software Engineering Portfolio**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+[![Next.js](https://img.shields.io/badge/Next.js-16.2.6-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![GSAP](https://img.shields.io/badge/GSAP-3.15-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-lac-one-91.vercel.app)
+
+<br />
+
+[🌐 **Live Website**](https://portfolio-lac-one-91.vercel.app) • [📄 **Download Resume**](https://portfolio-lac-one-91.vercel.app/Archi_Jain_Resume.pdf) • [💼 **LinkedIn**](https://www.linkedin.com/in/archi-jain-552b20287/) • [🐙 **GitHub Profile**](https://github.com/Archi-jain19)
+
+<br />
+
+</div>
+
+---
+
+## 📌 Overview
+
+This repository contains the source code for the personal portfolio of **Archi Jain**, a **B.Tech Computer Science Engineering (Data Science)** student at Jain University (2023–2027, CGPA: 8.023).
+
+The website showcases practical engineering expertise across **Python, SQL, data analytics, AI/ML pipelines, ETL workflows, and software development**, featuring dynamic project synchronization with GitHub and smooth, modern user interactions.
+
+---
+
+## ✨ Key Features
+
+- **🔄 Dynamic GitHub API Integration**:
+  - Automatically fetches and displays public repositories from [`@Archi-jain19`](https://github.com/Archi-jain19) using a cached Next.js route handler (`/api/github`).
+  - Automatically includes newly created public repositories without manual code edits.
+  - Features real-time stars, updated years, tags, direct repository links, and live demo buttons.
+  - Graceful fallback with zero latency and robust rate-limit protection.
+
+- **🎯 Interactive Project Filtering**:
+  - Filter projects dynamically by **Featured**, **AI & Data**, and **Software & Cloud**.
+  - Highlights core flagship projects: **FarmEase** and **RiskRadar**.
+
+- **🌊 Fluid Motion & Aesthetics**:
+  - Smooth inertia scrolling powered by **Lenis**.
+  - Pinned horizontal scroll runway for desktop projects powered by **GSAP ScrollTrigger**.
+  - Staggered word-reveal and micro-interactions powered by **Framer Motion**.
+  - Custom interactive cursor and draggable tool elements.
+
+- **📱 Fully Responsive**:
+  - Optimized for desktop, tablet, and mobile with dedicated touch-friendly cards and navigation.
+
+- **🚀 Performance & SEO**:
+  - Built on Next.js 16 with Turbopack, SSR, semantic HTML, and dynamic Open Graph metadata.
+
+---
+
+## 🛠️ Tech Stack
+
+| Domain | Technologies & Libraries |
+| :--- | :--- |
+| **Framework & Core** | [Next.js 16 (App Router)](https://nextjs.org/), [React 19](https://react.dev/), [TypeScript](https://www.typescriptlang.org/) |
+| **Styling & Design** | [Tailwind CSS v4](https://tailwindcss.com/), CSS Custom Properties, Dark Mode Aesthetics |
+| **Animation & Motion** | [GSAP](https://greensock.com/gsap/) (ScrollTrigger), [Framer Motion](https://www.framer.com/motion/), [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis) |
+| **Typography** | Inter, Playfair Display, JetBrains Mono |
+| **Data & APIs** | GitHub REST API v3, Next.js Route Handlers (`revalidate: 3600`) |
+| **Deployment** | [Vercel](https://vercel.com/) |
+
+---
+
+## 📂 Project Structure
+
+```text
+portfolio/
+├── public/
+│   ├── Archi_Jain_Resume.pdf   # Latest downloadable Data Science resume
+│   └── images/                 # Project assets and webp previews
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── github/
+│   │   │       └── route.ts    # Cached GitHub API sync endpoint
+│   │   ├── globals.css         # Design tokens, color palette, animations
+│   │   ├── layout.tsx          # Root layout & SEO OpenGraph metadata
+│   │   └── page.tsx            # Main page assembly & preloader flow
+│   └── components/
+│       ├── Preloader.tsx       # Opening branding transition
+│       ├── Navbar.tsx          # Responsive navigation & resume link
+│       ├── HeroSection.tsx     # Hero banner with kinetic typography
+│       ├── AboutSection.tsx    # Bio, word-reveal animation & milestone stats
+│       ├── ProjectsSection.tsx # Dynamic GitHub gallery & horizontal scroll
+│       ├── ExperienceSection.tsx # Timeline for BNNarratives & Infosys
+│       ├── SkillsSection.tsx   # Curated 6-category technical skillset
+│       ├── AchievementsSection.tsx # Ideathons, competitions & certifications marquee
+│       ├── ContactSection.tsx  # Direct communication, socials & draggable badges
+│       ├── CustomCursor.tsx    # Smooth desktop cursor follower
+│       └── SmoothScroll.tsx    # Lenis smooth scroll provider
+├── package.json
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌟 Featured Projects
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Project | Category | Tech Stack | Highlights |
+| :--- | :--- | :--- | :--- |
+| **[FarmEase](https://github.com/Archi-jain19)** | AI / Agriculture | Python, AI/ML, Data Analytics | AI-powered agriculture platform integrating crop recommendations, disease detection, fertilizer guidance, and yield insights. |
+| **[RiskRadar](https://github.com/Archi-jain19/RiskRadar)** | Machine Learning | Python, Scikit-Learn, Pandas | ML classification model predicting student dropout risk using feature engineering, data preprocessing, and model evaluation. |
+| **[Google Drive Clone](https://github.com/Archi-jain19/Google_Drive_Clone)** | Cloud Storage | TypeScript, React, FastAPI | Full-stack cloud storage application with JWT authentication, file streaming, and separate frontend/backend modules. |
+| **[FacetLens](https://github.com/Archi-jain19/Ai_Ml_Assignment)** | NLP / Pipeline | Python, Machine Learning | Scalable conversational facet scoring pipeline with principled abstention, automating dialogue analysis and evaluation. |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started Locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
+- **Node.js** (v18.18.0 or newer)
+- **npm** or **pnpm** / **yarn**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Clone the repository
+```bash
+git clone https://github.com/Archi-jain19/Portfolio.git
+cd Portfolio
+```
 
-## Deploy on Vercel
+### 2. Install dependencies
+```bash
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Run the development server
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+### 4. Build for production
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 📬 Contact & Connect
+
+- **Email**: [archizn19@gmail.com](mailto:archizn19@gmail.com)
+- **Phone**: `+91 9754839167`
+- **LinkedIn**: [linkedin.com/in/archi-jain-552b20287](https://www.linkedin.com/in/archi-jain-552b20287/)
+- **GitHub**: [github.com/Archi-jain19](https://github.com/Archi-jain19)
+- **Location**: India
+
+---
+
+<div align="center">
+  <sub>Designed & Built by <b>Archi Jain</b> • © 2026 All Rights Reserved</sub>
+</div>
